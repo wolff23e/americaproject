@@ -1,0 +1,20 @@
+/*-----------------------------------------------
+|   Notice
+-----------------------------------------------*/
+.notice{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 1rem !important;
+  z-index: -1;
+  border-color: rgba($white, 0.2);
+  max-width: 530px;
+  &.show{ z-index: 1020; }
+}
+.notice-right{
+  left: auto;
+  right: 0;
+}
+.ie{
+  .notice{ width: 530px; }
+}

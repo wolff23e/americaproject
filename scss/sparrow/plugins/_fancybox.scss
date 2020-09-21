@@ -1,0 +1,22 @@
+/*-----------------------------------------------
+|   Fancybox
+-----------------------------------------------*/
+.fancybox-caption-wrap, .fancybox-infobar{
+  display: none;
+}
+.fancybox-toolbar{
+  top: 1rem;
+  right: 1rem;
+  @include media-breakpoint-up($fancynav-breakpoint-up) { right: $fancynav-width + 1rem; }
+  opacity: 1;
+  visibility: visible !important;
+}
+.fancybox-active{ 
+  overflow: auto !important;
+  margin-right: 0 !important;
+}
+[dir="rtl"]{ 
+  .fancybox-active{
+    margin-left: 0 !important;
+  }  
+}

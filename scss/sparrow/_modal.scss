@@ -1,0 +1,22 @@
+.modal-xs{ width: $modal-xs; }
+.modal-open{ 
+  overflow: auto;
+  padding-right: 0 !important;
+
+  .sticky-top{ 
+    margin-right: 0 !important; 
+    padding-right: 0 !important;
+  }
+}
+
+.modal-dialog{
+  // When fading in the modal, animate it to slide down
+  .modal.fade-in & {
+    @include transition($modal-transition);
+    transform: $modal-fade-in-transform;
+  }
+}
+
+[dir="rtl"]{
+  .modal-open{ padding-left: 0 !important; }
+}

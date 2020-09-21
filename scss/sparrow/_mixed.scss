@@ -1,0 +1,71 @@
+/*-----------------------------------------------
+|   Object fit and Z-index
+-----------------------------------------------*/
+.fit-cover {
+  object-fit: cover;
+}
+.z-index-1 {
+  z-index: 1;
+}
+
+/*-----------------------------------------------
+|   Zanimation
+-----------------------------------------------*/
+*[data-zanim-trigger] {
+  opacity: 0;
+}
+
+/*-----------------------------------------------
+|   Puppeteer
+-----------------------------------------------*/
+.puppeteer {
+  .fancynavbar {
+    display: none !important;
+  }
+  .main,
+  .footer {
+    width: 100vw !important;
+  }
+  *[data-zanim-trigger] {
+    opacity: 1 !important;
+  }
+}
+
+/*-----------------------------------------------
+|   Times Icon
+-----------------------------------------------*/
+.times-icon {
+  position: relative;
+  outline: none;
+  &:before,
+  &:after {
+    left: 0;
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: $white;
+  }
+  &:after {
+    transform: rotate(45deg);
+  }
+  &:before {
+    transform: rotate(-45deg);
+  }
+
+  @include hover-focus {
+    outline: none;
+  }
+}
+.text-shadow-none {
+  text-shadow: none !important;
+}
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+// Used to fix FontAwesome .fa-stack size
+.fa-stack-size {
+  height: 2em;
+  width: 2em;
+}
